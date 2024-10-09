@@ -1,0 +1,72 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    padding: 20px;
+  }
+  
+  .im {
+    margin-top: 150px;
+    width: 22%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .hero h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+  }
+  
+  .hero h1 span {
+    background: linear-gradient(270deg, #1a7295 20%, #718f95 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .im {
+      margin-top: 100px;
+      width: 40%; /* Increase the width for better visibility on smaller screens */
+    }
+  
+    .hero h1 {
+      width: 90%; /* Make the text span the full width */
+      font-size: 40px; /* Decrease font size for smaller screens */
+    }
+  
+    .hero p {
+      width: 80%; /* Widen the paragraph to fit the screen better */
+      font-size: 14px; /* Adjust font size */
+      line-height: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .im {
+      margin-top: 80px;
+      width: 50%; /* Even bigger logo for very small screens */
+    }
+  
+    .hero h1 {
+      font-size: 30px; /* Further decrease the font size for very small screens */
+    }
+  
+    .hero p {
+      width: 90%;
+      font-size: 13px; /* Further reduce font size */
+      line-height: 22px;
+    }
+  }
+  
